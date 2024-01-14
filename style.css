@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+.nav{
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vh;
+    font-size: 3vh;
+    border-bottom: 2px solid #dadada;
+}
+nav h1 a{
+    color: black;
+}
+
+
+
+.nav_ul{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+ul li a{
+    color: black;
+}
+
+
+#bars{
+    display: none;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    padding: 12vw 10vw;
+}
+.left h1{
+    color: royalblue;
+}
+
+.left p{
+margin-top: 2vw;
+font-size: 3vh;
+}
+.left button{
+    margin-top: 2vw;
+    padding: 0.5vh 2vh;
+    border: none;
+    background-color: royalblue;
+    color: white;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+   animation: float 2s ease-in-out infinite alternate;
+}
+
+.card{
+    width: 100%;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 10vh;
+    gap:6vh;
+}
+
+#box1{
+    background-color: #F8F8F9;
+}
+#box2{
+    background-color: #F8F8F9;
+}
+#box3{
+    background-color: #F8F8F9;
+}
+.box{
+    width: 100%;
+    height:40vh
+}
+
+.box img{
+  max-width: 100%;  
+  height: 30%;
+  display: block;
+  margin: auto;
+  padding-top: 1vh;
+}
+.box h1, .box p{
+    text-align: center;
+}
+
+.inner_box{
+    margin-top: 6vh;
+}
+.innner_box p{
+margin-top: 4vw;
+}
+.Our_Services{
+    margin-top: 20vh;
+}
+.Our_Services h2, .Our_Services p{
+    text-align: center;
+}
+.Our_Services h2 span{
+color: royalblue;
+}
+
+.about{
+    width: 100%;
+    background-color:#00204A;
+    color: white;
+    margin-top: 3vh;
+    padding-top: 8vh;
+}
+.about h2{
+    text-align: center;
+}
+#p{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 3vh;
+}
+.about_content{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ padding: 4vh 12vh;
+ gap: 6vh;
+}
+.about_content img{
+    max-width: 100%;
+}
+
+.left1{
+width: 50%;
+}
+.right1{
+width: 50%;
+}
+.right1 p{
+margin-top: 5vh;
+font-size: 3vh;
+}
+.right1 button{
+margin-top: 5vh;
+padding: 0.5vh 2vh;
+border: none;
+background-color: royalblue;
+color: white;
+}
+
+footer{
+    width: 100%;
+}
+.footer{
+   width: 100%;
+   padding: 3vw 10vw;
+   margin-top: 3vh;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot ul{
+    margin-top: 3vh;
+}
+
+input{
+    padding:1vh 2vh;
+    background: none;
+}
+
+.footer_list{
+line-height: 6vh;
+}
+
+
+
+
+
+
+
+@media (max-width:426px) {
+    
+    nav{
+        height: 80px;
+    }
+    .nav_ul li a{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+    .content{
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+
+    .left h1{
+        margin-top: 5vh;
+    }
+
+    .left p{
+        margin-top: 10vw;
+        font-size: 3vh;
+        }
+ 
+        .left button{
+            margin-top: 10vw;
+          
+        }
+
+        .services{
+            flex-direction: column;
+            padding: 4vh 5vh;
+        }
+
+        .Our_Services{
+            margin-top: 43vh;
+        }
+
+        .about_content{
+            flex-direction: column;
+            width: 100%;
+            padding: 2vh 3vh;
+        }
+        .left1{
+            width: 100%;
+        }
+        .right1{
+            width: 100%;
+        }
+
+         .right1 img{
+            max-width: 100%;
+         }
+
+        .right1 h1{
+            margin-top: 8vh;
+        }
+
+        .foot{
+            flex-direction: column;
+            gap: 10vh;
+        }
+        .foot ul{
+            margin-top: 1vh;
+        }
+
+}
+
+@media (max-width:768px) {
+    .services{
+        flex-direction: column;
+    }
+  
+}
+
+
+
+@keyframes float {
+    0%{
+      transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(0, 10%);
+      }
+}
